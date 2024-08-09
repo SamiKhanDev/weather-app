@@ -17,6 +17,7 @@ coil="2.6.0"
 compose-navigation = "2.7.7"
 compose-constraint = "1.0.1"
 room-version = "2.6.1"
+runtimeLivedata = "1.6.8"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -50,6 +51,7 @@ room-runtime = {module = "androidx.room:room-runtime", version.ref = "room-versi
 room-compiler = {module = "androidx.room:room-compiler", version.ref = "room-version"}
 room-kapt = {module = "androidx.room:room-compiler", version.ref = "room-version"}
 room-ktx = {module = "androidx.room:room-ktx", version.ref = "room-version"}
+androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
 
 
 [plugins]
