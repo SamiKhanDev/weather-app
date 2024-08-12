@@ -65,6 +65,7 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.runtime.livedata)
+    implementation(libs.play.services.location)
     kapt(libs.dagger.hilt.compiler)
     implementation(libs.dagger.hilt.andriod)
     implementation(libs.androidx.ui.tooling.preview)

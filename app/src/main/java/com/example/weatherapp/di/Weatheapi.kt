@@ -8,6 +8,9 @@ interface Weatherapi{
     @GET("/v1/current.json")
     suspend fun getWeather(
         @Query("key") apikey:String,
-        @Query ("q") city : String
+        @Query ("q") latlon : String
     ):Response<WeatherModel>
+
+
 }
+

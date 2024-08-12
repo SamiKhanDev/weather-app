@@ -20,6 +20,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableStateOf
@@ -37,7 +38,7 @@ import coil.compose.AsyncImage
 import com.example.weatherapp.di.NetworkResponse
 
 @Composable
-fun weatherScreen(viewModel: WeatherViewModel){
+fun weatherScreen(viewModel: WeatherViewModel,location: String){
     var city by remember {
         mutableStateOf("")
     }
@@ -45,6 +46,10 @@ fun weatherScreen(viewModel: WeatherViewModel){
     val weatherResult = viewModel.weatherResult.observeAsState()
 
     val keyboardController = LocalSoftwareKeyboardController.current
+
+    LaunchedEffect(location) {
+        viewModel.getData(location)
+    }
 
     Column(
         modifier = Modifier

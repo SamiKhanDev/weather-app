@@ -18,6 +18,7 @@ compose-navigation = "2.7.7"
 compose-constraint = "1.0.1"
 room-version = "2.6.1"
 runtimeLivedata = "1.6.8"
+playServicesLocation = "21.3.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -52,6 +53,7 @@ room-compiler = {module = "androidx.room:room-compiler", version.ref = "room-ver
 room-kapt = {module = "androidx.room:room-compiler", version.ref = "room-version"}
 room-ktx = {module = "androidx.room:room-ktx", version.ref = "room-version"}
 androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
 
 
 [plugins]
